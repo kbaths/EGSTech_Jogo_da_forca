@@ -28,6 +28,7 @@ document.addEventListener("keydown", (event) => {
 function updateGame() {
     showWrongLetters();
     showCorrectLetters();
+    drawGallows();
 };
 
 // mostrar letras erradas na tela
@@ -50,7 +51,14 @@ function showCorrectLetters() {
             container.innerHTML += `<span>_</span>`;
         }
     })
+}
 
+// Desenhando o boneco da forca
+function drawGallows() {
+    const bodyPart = document.querySelectorAll(".gallows-part");
+    for (let i = 0; i < wrongLyrics.length; i++) {
+        bodyPart[i].style.display = "block";
+    }
 }
 
 
