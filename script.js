@@ -27,6 +27,7 @@ document.addEventListener("keydown", (event) => {
 
 function updateGame() {
     showWrongLetters();
+    showCorrectLetters();
 };
 
 // mostrar letras erradas na tela
@@ -36,6 +37,20 @@ function showWrongLetters() {
     wrongLyrics.forEach(lyrics => {
         div.innerHTML += `<span>${lyrics}</span>`;
     })
+}
+
+// mostrar letras corretas na tela
+function showCorrectLetters() {
+    const container = document.querySelector(".container-secret-word");
+    container.innerHTML = "";
+    secretWord.split("").forEach(lyrics => {
+        if (correctLetters.includes(lyrics)) {
+            container.innerHTML += `<span>${lyrics}</span>`;
+        } else {
+            container.innerHTML += `<span>_</span>`;
+        }
+    })
+
 }
 
 
