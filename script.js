@@ -27,11 +27,11 @@ document.addEventListener("keydown", (event) => {
 
 // mostrar aviso de letra repetida
 function warningRepeatedLetter() {
-    const warning = document.querySelector(".repeated-word warning");
+    const warning = document.querySelector(".repeated-word-warning");
     warning.classList.add("show");
     setTimeout(() => {
         warning.classList.remove("show");
-    }, 1000);
+    }, 2000);
 }
 
 function isLyrics(code) {
