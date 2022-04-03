@@ -1,5 +1,5 @@
 const technologies = [
-    "java", "react", "node", "python", "php"
+    "java", "react", "node", "python", "php", "javascript"
 ];
 
 const secretWord = technologies[Math.floor(Math.random() * technologies.length)];
