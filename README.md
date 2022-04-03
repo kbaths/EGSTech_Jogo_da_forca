@@ -10,6 +10,8 @@ Tecnologias que pode ser achado no jogo:
 * Java
 * Javascript
 * Python
+
+* Link para jogar: https://kbaths.github.io/EGSTech_Jogo_da_forca/
 ## :wrench: Tecnologias utilizadas
 * HTML
 * CSS
@@ -41,5 +43,6 @@ Clone esse projeto em seu computador com o comando:
   </tr>
 </table>
 
+Autor ❤ [Julio Anderson](https://www.instagram.com/_kbath/)
 
 ## :dart: Status do projeto
