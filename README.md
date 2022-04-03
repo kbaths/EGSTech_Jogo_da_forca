@@ -36,7 +36,7 @@ Clone esse projeto em seu computador com o comando:
       <a href="https://github.com/kbaths">
         <img src="https://avatars.githubusercontent.com/u/81596847?v=4" width="100px;" alt="Foto de Julio Anderson no GitHub"/><br>
         <sub>
-          <b>tatialveso</b>
+          <b>Kbaths</b>
         </sub>
       </a>
     </td>
@@ -44,5 +44,3 @@ Clone esse projeto em seu computador com o comando:
 </table>
 
 Autor ❤ [Julio Anderson](https://www.instagram.com/_kbath/)
-
-## :dart: Status do projeto
