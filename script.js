@@ -21,9 +21,23 @@ document.addEventListener("keydown", (event) => {
                 wrongLyrics.push(lyrics);
             }
         }
-        // atualizarJogo();
+        updateGame();
     }
 });
+
+function updateGame() {
+    showWrongLetters();
+};
+
+// mostrar letras erradas na tela
+function showWrongLetters() {
+    const div = document.querySelector(".container-wrong-letters");
+    div.innerHTML = "<h3>Letras erradas</h3>";
+    wrongLyrics.forEach(lyrics => {
+        div.innerHTML += `<span>${lyrics}</span>`;
+    })
+}
+
 
 // mostrar aviso de letra repetida
 function warningRepeatedLetter() {

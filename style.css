@@ -27,11 +27,11 @@ body {
     display: none;
 }
 
-.letras-erradas-container {
+.container-wrong-letters {
     font-size: 32px;
 }
 
-.letras-erradas-container span {
+.container-wrong-letters span {
     margin: 0 2px;
 }
 
