@@ -29,6 +29,7 @@ function updateGame() {
     showWrongLetters();
     showCorrectLetters();
     drawGallows();
+    checkGame();
 };
 
 // mostrar letras erradas na tela
@@ -51,6 +52,26 @@ function showCorrectLetters() {
             container.innerHTML += `<span>_</span>`;
         }
     })
+}
+
+// Checar se o jogador ganhou o jogo
+function checkGame() {
+    const container = document.querySelector(".container-secret-word");
+    const bodyPart = document.querySelectorAll(".gallows-part");
+    let message = "";
+
+    if (wrongLyrics.length === bodyPart.length) {
+        message = "Fim de jogo! Você perdeu!"
+    };
+
+    if (secretWord === container.innerText) {
+        message = "Parabéns! Você ganhou 😍"
+    }
+
+    if (message) {
+        document.querySelector("#message").innerHTML = message;
+        document.querySelector(".popup-container").style.display = "flex";
+    }
 }
 
 // Desenhando o boneco da forca
