@@ -32,6 +32,8 @@ function updateGame() {
     checkGame();
 };
 
+
+
 // mostrar letras erradas na tela
 function showWrongLetters() {
     const div = document.querySelector(".container-wrong-letters");
@@ -61,7 +63,7 @@ function checkGame() {
     let message = "";
 
     if (wrongLyrics.length === bodyPart.length) {
-        message = "Fim de jogo! Você perdeu!"
+        message = "Fim de jogo! Você perdeu 😕"
     };
 
     if (secretWord === container.innerText) {
@@ -90,6 +92,11 @@ function warningRepeatedLetter() {
     setTimeout(() => {
         warning.classList.remove("show");
     }, 2000);
+}
+
+// reiniciar o Jogo
+function restartGame() {
+    window.location.reload();
 }
 
 function isLyrics(code) {
